@@ -1,7 +1,7 @@
-package petEndpoint.regressionTest.findPet;
+package petEndpoint.findPet;
 
 import org.junit.jupiter.api.Test;
-import petEndpoint.regressionTest.BaseTest;
+import petEndpoint.BaseTest;
 
 import static io.restassured.RestAssured.given;
 

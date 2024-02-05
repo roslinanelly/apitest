@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: petEndpoint.regressionTest.findPet.FindByStatusTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.600 s <<< FAILURE! -- in petEndpoint.regressionTest.findPet.FindByStatusTest
-petEndpoint.regressionTest.findPet.FindByStatusTest.givenNoStatus_findAllPetDetailsByStatus_thenBadRequest400 -- Time elapsed: 2.187 s <<< FAILURE!
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.757 s <<< FAILURE! -- in petEndpoint.regressionTest.findPet.FindByStatusTest
+petEndpoint.regressionTest.findPet.FindByStatusTest.givenNoStatus_findAllPetDetailsByStatus_thenBadRequest400 -- Time elapsed: 2.249 s <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <200>.
@@ -42,7 +42,7 @@ Expected status code <400> but was <200>.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-petEndpoint.regressionTest.findPet.FindByStatusTest.givenInvalidStatus_findAllPetDetailsByStatus_thenBadRequest400 -- Time elapsed: 1.214 s <<< FAILURE!
+petEndpoint.regressionTest.findPet.FindByStatusTest.givenInvalidStatus_findAllPetDetailsByStatus_thenBadRequest400 -- Time elapsed: 1.331 s <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <200>.

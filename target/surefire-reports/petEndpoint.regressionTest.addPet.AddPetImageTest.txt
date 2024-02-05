@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: petEndpoint.regressionTest.addPet.AddPetImageTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.03 s <<< FAILURE! -- in petEndpoint.regressionTest.addPet.AddPetImageTest
-petEndpoint.regressionTest.addPet.AddPetImageTest.givenInvalidPetId_uploadPetPhoto_thenError4XX -- Time elapsed: 2.410 s <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.51 s <<< FAILURE! -- in petEndpoint.regressionTest.addPet.AddPetImageTest
+petEndpoint.regressionTest.addPet.AddPetImageTest.givenInvalidPetId_uploadPetPhoto_thenError4XX -- Time elapsed: 2.681 s <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <200>.

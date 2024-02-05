@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: petEndpoint.regressionTest.addPet.AddNewPetTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.964 s <<< FAILURE! -- in petEndpoint.regressionTest.addPet.AddNewPetTest
-petEndpoint.regressionTest.addPet.AddNewPetTest.givenInValidComplexDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched -- Time elapsed: 1.189 s <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.239 s <<< FAILURE! -- in petEndpoint.regressionTest.addPet.AddNewPetTest
+petEndpoint.regressionTest.addPet.AddNewPetTest.givenInValidComplexDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched -- Time elapsed: 1.290 s <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <200>.

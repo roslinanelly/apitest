@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="petEndpoint.regressionTest.addPet.AddPetImageTest" time="10.028" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="petEndpoint.regressionTest.addPet.AddPetImageTest" time="10.507" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="AU"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/alex/Dropbox/Nelly/GIT/codility/target/surefire/surefirebooter-20240205185059603_3.jar /Users/alex/Dropbox/Nelly/GIT/codility/target/surefire 2024-02-05T18-50-59_557-jvmRun1 surefire-20240205185059603_1tmp surefire_0-20240205185059603_2tmp"/>
+    <property name="sun.java.command" value="/Users/alex/Dropbox/Nelly/GIT/codility/target/surefire/surefirebooter-20240205192144352_3.jar /Users/alex/Dropbox/Nelly/GIT/codility/target/surefire 2024-02-05T19-21-44_306-jvmRun1 surefire-20240205192144352_1tmp surefire_0-20240205192144352_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/alex/Dropbox/Nelly/GIT/codility/target/test-classes:/Users/alex/Dropbox/Nelly/GIT/codility/target/classes:/Users/alex/.m2/repository/io/rest-assured/rest-assured/5.3.1/rest-assured-5.3.1.jar:/Users/alex/.m2/repository/org/apache/groovy/groovy/4.0.11/groovy-4.0.11.jar:/Users/alex/.m2/repository/org/apache/groovy/groovy-xml/4.0.11/groovy-xml-4.0.11.jar:/Users/alex/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/alex/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/alex/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/alex/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/alex/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/alex/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/alex/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/alex/.m2/repository/io/rest-assured/json-path/5.3.1/json-path-5.3.1.jar:/Users/alex/.m2/repository/org/apache/groovy/groovy-json/4.0.11/groovy-json-4.0.11.jar:/Users/alex/.m2/repository/io/rest-assured/rest-assured-common/5.3.1/rest-assured-common-5.3.1.jar:/Users/alex/.m2/repository/io/rest-assured/xml-path/5.3.1/xml-path-5.3.1.jar:/Users/alex/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/alex/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/alex/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/alex/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/alex/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/alex/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/alex/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/alex/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/alex/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/alex/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/alex/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/alex/Dropbox/Nelly/GIT/codility/target/surefire/surefirebooter-20240205185059603_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/alex/Dropbox/Nelly/GIT/codility/target/surefire/surefirebooter-20240205192144352_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.2"/>
@@ -59,7 +59,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="givenValidPetId_uploadPetPhotoWithAllDetails_thenSuccess200_withResponseBodyMatched" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.45">
+  <testcase name="givenValidPetId_uploadPetPhotoWithAllDetails_thenSuccess200_withResponseBodyMatched" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.621">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -109,11 +109,11 @@ Multiparts:		------------
 				Content-Disposition: form-data; name = file; filename = my_pet1.png
 				Content-Type: application/octet-stream
 
-				src/main/resources/my_pet1.png
+				src/test/resources/my_pet1.png
 Body:			<none>
 ]]></system-out>
   </testcase>
-  <testcase name="givenInvalidPetId_uploadPetPhoto_thenError4XX" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.41">
+  <testcase name="givenInvalidPetId_uploadPetPhoto_thenError4XX" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.681">
     <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <200>.
@@ -173,11 +173,11 @@ Multiparts:		------------
 				Content-Disposition: form-data; name = file; filename = my_pet1.png
 				Content-Type: application/octet-stream
 
-				src/main/resources/my_pet1.png
+				src/test/resources/my_pet1.png
 Body:			<none>
 ]]></system-out>
   </testcase>
-  <testcase name="givenValidPetId_uploadPetPhotoWithoutMetadata_thenSuccess200_withResponseBodyMatched" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.532">
+  <testcase name="givenValidPetId_uploadPetPhotoWithoutMetadata_thenSuccess200_withResponseBodyMatched" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.566">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -222,11 +222,11 @@ Multiparts:		------------
 				Content-Disposition: form-data; name = file; filename = my_pet1.png
 				Content-Type: application/octet-stream
 
-				src/main/resources/my_pet1.png
+				src/test/resources/my_pet1.png
 Body:			<none>
 ]]></system-out>
   </testcase>
-  <testcase name="givenValidPetId_uploadPetPhotoWithoutImageFile_thenError400" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.625">
+  <testcase name="givenValidPetId_uploadPetPhotoWithoutImageFile_thenError400" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.633">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -270,7 +270,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 400 Bad Request
-Date: Mon, 05 Feb 2024 07:51:34 GMT
+Date: Mon, 05 Feb 2024 08:22:21 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive

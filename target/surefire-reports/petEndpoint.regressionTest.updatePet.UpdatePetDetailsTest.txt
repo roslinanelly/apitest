@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: petEndpoint.regressionTest.updatePet.UpdatePetDetailsTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 14.51 s <<< FAILURE! -- in petEndpoint.regressionTest.updatePet.UpdatePetDetailsTest
-petEndpoint.regressionTest.updatePet.UpdatePetDetailsTest.givenNotExistPetDetailRequest_updatePetDetails_thenNotFound404 -- Time elapsed: 4.866 s <<< FAILURE!
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 16.86 s <<< FAILURE! -- in petEndpoint.regressionTest.updatePet.UpdatePetDetailsTest
+petEndpoint.regressionTest.updatePet.UpdatePetDetailsTest.givenNotExistPetDetailRequest_updatePetDetails_thenNotFound404 -- Time elapsed: 5.211 s <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <200>.
@@ -32,7 +32,7 @@ Expected status code <400> but was <200>.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-petEndpoint.regressionTest.updatePet.UpdatePetDetailsTest.givenInvalidMissingDetailsRequest_updateComplexPetDetails_thenError405 -- Time elapsed: 2.393 s <<< FAILURE!
+petEndpoint.regressionTest.updatePet.UpdatePetDetailsTest.givenInvalidMissingDetailsRequest_updateComplexPetDetails_thenError405 -- Time elapsed: 3.761 s <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <405> but was <200>.
