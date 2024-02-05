@@ -1,11 +1,11 @@
-package test.java.regressionTest.updatePet;
+package regressionTest.updatePet;
 
 import org.hamcrest.Matchers;
 import org.json.JSONException;
 import org.junit.jupiter.api.Test;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
-import test.java.BaseTest;
+import regressionTest.BaseTest;
 
 import java.io.IOException;
 import java.nio.file.Files;

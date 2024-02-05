@@ -1,4 +1,4 @@
-package test.java.regressionTest.findPet;
+package regressionTest.findPet;
 
 import org.hamcrest.Matchers;
 import org.json.JSONException;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
-import test.java.BaseTest;
+import regressionTest.BaseTest;
 
 import java.io.IOException;
 import java.nio.file.Files;

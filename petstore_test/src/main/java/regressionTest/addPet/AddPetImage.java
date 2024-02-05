@@ -1,10 +1,10 @@
-package test.java.regressionTest.addPet;
+package regressionTest.addPet;
 
 import org.json.JSONException;
 import org.junit.jupiter.api.Test;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
-import test.java.BaseTest;
+import regressionTest.BaseTest;
 
 import java.io.File;
 import java.io.IOException;
