@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
-Test set: petEndpoint.regressionTest.addPet.AddNewPetTest
+Test set: petEndpoint.regressionTest.addPet.AddPetImageTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.240 s <<< FAILURE! -- in petEndpoint.regressionTest.addPet.AddNewPetTest
-petEndpoint.regressionTest.addPet.AddNewPetTest.givenInValidComplexDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched -- Time elapsed: 1.314 s <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.48 s <<< FAILURE! -- in petEndpoint.regressionTest.addPet.AddPetImageTest
+petEndpoint.regressionTest.addPet.AddPetImageTest.givenInvalidPetId_uploadPetPhoto_thenError4XX -- Time elapsed: 2.616 s <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <200>.
@@ -27,7 +27,7 @@ Expected status code <400> but was <200>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at petEndpoint.regressionTest.addPet.AddNewPetTest.givenInValidComplexDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched(AddNewPetTest.java:116)
+	at petEndpoint.regressionTest.addPet.AddPetImageTest.givenInvalidPetId_uploadPetPhoto_thenError4XX(AddPetImageTest.java:142)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)

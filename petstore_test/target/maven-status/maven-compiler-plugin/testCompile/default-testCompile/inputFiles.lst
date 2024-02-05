@@ -1,8 +1,8 @@
 /Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/BaseTest.java
-/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/updatePet/UpdatePetDetails.java
-/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/findPet/FindByStatus.java
-/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/updatePet/UpdatePetByForm.java
-/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/addPet/AddPetImage.java
-/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/deleteAPetRecord/DeleteAPet.java
-/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/findPet/FindById.java
+/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/findPet/FindByStatusTest.java
+/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/findPet/FindByIdTest.java
+/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/updatePet/UpdatePetByFormTest.java
+/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/addPet/AddPetImageTest.java
+/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/deleteAPetRecord/DeleteAPetTest.java
+/Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/updatePet/UpdatePetDetailsTest.java
 /Users/alex/Dropbox/Nelly/GIT/codility/petstore_test/src/test/java/petEndpoint/regressionTest/addPet/AddNewPetTest.java

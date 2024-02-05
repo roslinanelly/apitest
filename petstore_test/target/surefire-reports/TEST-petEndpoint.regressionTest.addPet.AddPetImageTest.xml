@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="petEndpoint.regressionTest.addPet.AddNewPetTest" time="5.24" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="petEndpoint.regressionTest.addPet.AddPetImageTest" time="10.48" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -59,7 +59,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="givenValidSimpleDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched" classname="petEndpoint.regressionTest.addPet.AddNewPetTest" time="1.303">
+  <testcase name="givenValidPetId_uploadPetPhotoWithAllDetails_thenSuccess200_withResponseBodyMatched" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.622">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -73,7 +73,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 112233,
+    "id": 2222222222,
     "category": {
         "id": 0,
         "name": "someCategoryName"
@@ -90,9 +90,30 @@ Body:
     ],
     "status": "available"
 }
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/2222222222/uploadImage
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = additionalMetadata; filename = file
+				Content-Type: text/plain
+
+				some info about the pet
+				------------
+				Content-Disposition: form-data; name = file; filename = my_pet1.png
+				Content-Type: application/octet-stream
+
+				src/main/resources/my_pet1.png
+Body:			<none>
 ]]></system-out>
   </testcase>
-  <testcase name="givenInValidComplexDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched" classname="petEndpoint.regressionTest.addPet.AddNewPetTest" time="1.314">
+  <testcase name="givenInvalidPetId_uploadPetPhoto_thenError4XX" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.616">
     <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <200>.
@@ -117,11 +138,46 @@ Expected status code <400> but was <200>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at petEndpoint.regressionTest.addPet.AddNewPetTest.givenInValidComplexDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched(AddNewPetTest.java:116)
+	at petEndpoint.regressionTest.addPet.AddPetImageTest.givenInvalidPetId_uploadPetPhoto_thenError4XX(AddPetImageTest.java:142)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/pet/2222222222
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/2222222222/uploadImage
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = additionalMetadata; filename = file
+				Content-Type: text/plain
+
+				some info about the pet
+				------------
+				Content-Disposition: form-data; name = file; filename = my_pet1.png
+				Content-Type: application/octet-stream
+
+				src/main/resources/my_pet1.png
+Body:			<none>
+]]></system-out>
+  </testcase>
+  <testcase name="givenValidPetId_uploadPetPhotoWithoutMetadata_thenSuccess200_withResponseBodyMatched" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.618">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -135,82 +191,98 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 1122334455,
+    "id": 2222222222,
     "category": {
         "id": 0,
-        "name": ""
-    },
-    "tags": [
-        
-    ],
-    "status": ""
-}
-]]></system-out>
-  </testcase>
-  <testcase name="givenValidComplexDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched" classname="petEndpoint.regressionTest.addPet.AddNewPetTest" time="1.279">
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/pet
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 11223344,
-    "category": {
-        "id": 111,
         "name": "someCategoryName"
     },
-    "name": "complex",
-    "photoUrls": [
-        "<url1>https://myphoto/123</url1>",
-        "<url2>https://myphoto/1234</url2>"
-    ],
-    "tags": [
-        {
-            "id": 11,
-            "name": "someTagName1"
-        },
-        {
-            "id": 22,
-            "name": "someTagName2"
-        },
-        {
-            "id": 33,
-            "name": "someTagName3"
-        }
-    ],
-    "status": "pending"
-}
-]]></system-out>
-  </testcase>
-  <testcase name="givenValidMinimumDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched" classname="petEndpoint.regressionTest.addPet.AddNewPetTest" time="1.337">
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/pet
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 112233,
-    "name": "minimum",
+    "name": "simple",
     "photoUrls": [
         "somePhotoURL"
     ],
     "tags": [
-        
-    ]
+        {
+            "id": 0,
+            "name": "someTagName"
+        }
+    ],
+    "status": "available"
+}
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/2222222222/uploadImage
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = file; filename = my_pet1.png
+				Content-Type: application/octet-stream
+
+				src/main/resources/my_pet1.png
+Body:			<none>
+]]></system-out>
+  </testcase>
+  <testcase name="givenValidPetId_uploadPetPhotoWithoutImageFile_thenError400" classname="petEndpoint.regressionTest.addPet.AddPetImageTest" time="2.618">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2222222222,
+    "category": {
+        "id": 0,
+        "name": "someCategoryName"
+    },
+    "name": "simple",
+    "photoUrls": [
+        "somePhotoURL"
+    ],
+    "tags": [
+        {
+            "id": 0,
+            "name": "someTagName"
+        }
+    ],
+    "status": "available"
+}
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/2222222222/uploadImage
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Mon, 05 Feb 2024 07:20:20 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 400,
+    "type": "unknown",
+    "message": "org.jvnet.mimepull.MIMEParsingException: Missing start boundary"
 }
 ]]></system-out>
   </testcase>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: petEndpoint.regressionTest.updatePet.UpdatePetByFormTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.84 s -- in petEndpoint.regressionTest.updatePet.UpdatePetByFormTest
