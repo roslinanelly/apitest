@@ -1,4 +1,4 @@
-package petEndpoint;
+package petEndpoint.regressionTest;
 
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeEach;
