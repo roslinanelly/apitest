@@ -16,7 +16,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.not;
 
 
-public class FindById extends BaseTest {
+public class FindByIdTest extends BaseTest {
 
     private static final String petId = "999999999" ;
     private String request;

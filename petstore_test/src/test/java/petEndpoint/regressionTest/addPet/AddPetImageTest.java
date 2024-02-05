@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.given;
 
-public class AddPetImage extends BaseTest {
+public class AddPetImageTest extends BaseTest {
 
     private static final String petId = "2222222222" ;
     private static final String imageFileName = "my_pet1.png";

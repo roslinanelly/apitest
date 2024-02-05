@@ -5,7 +5,7 @@ import petEndpoint.regressionTest.BaseTest;
 
 import static io.restassured.RestAssured.given;
 
-public class FindByStatus extends BaseTest {
+public class FindByStatusTest extends BaseTest {
 
     private static final String objectName = "/findByStatus";
 

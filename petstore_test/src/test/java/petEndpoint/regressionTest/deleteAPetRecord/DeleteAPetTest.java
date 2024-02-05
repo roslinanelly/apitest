@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.given;
 
-public class DeleteAPet extends BaseTest {
+public class DeleteAPetTest extends BaseTest {
 
     private static final String petId = "1111111111" ;
 

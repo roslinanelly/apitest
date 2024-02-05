@@ -14,7 +14,7 @@ import java.nio.file.Paths;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.not;
 
-public class UpdatePetDetails extends BaseTest {
+public class UpdatePetDetailsTest extends BaseTest {
 
     private static final String petId = "3333333333" ;
 
