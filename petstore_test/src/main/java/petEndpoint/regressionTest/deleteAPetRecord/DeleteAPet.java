@@ -1,10 +1,10 @@
-package regressionTest.deleteAPetRecord;
+package petEndpoint.regressionTest.deleteAPetRecord;
 
 import org.json.JSONException;
 import org.junit.jupiter.api.Test;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
-import regressionTest.BaseTest;
+import petEndpoint.regressionTest.BaseTest;
 
 import java.io.IOException;
 import java.nio.file.Files;
