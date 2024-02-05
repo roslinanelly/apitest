@@ -1,4 +1,3 @@
-# codility
 This repository contains regression test suite on public API PETSTORE application on PETENDPOINT
 
 The swagger can be found in https://petstore.swagger.io/#/
