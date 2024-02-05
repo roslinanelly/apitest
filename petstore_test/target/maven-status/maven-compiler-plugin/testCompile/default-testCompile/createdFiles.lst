@@ -1,0 +1,8 @@
+petEndpoint/regressionTest/BaseTest.class
+petEndpoint/regressionTest/findPet/FindById.class
+petEndpoint/regressionTest/findPet/FindByStatus.class
+petEndpoint/regressionTest/addPet/AddPetImage.class
+petEndpoint/regressionTest/updatePet/UpdatePetByForm.class
+petEndpoint/regressionTest/updatePet/UpdatePetDetails.class
+petEndpoint/regressionTest/addPet/AddNewPetTest.class
+petEndpoint/regressionTest/deleteAPetRecord/DeleteAPet.class

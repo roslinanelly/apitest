@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.given;
 
-public class AddNewPet extends BaseTest {
+public class AddNewPetTest extends BaseTest {
 
     /** positive test
      * Create new pet with simple details, all optional fields are provided
