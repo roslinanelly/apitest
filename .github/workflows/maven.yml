@@ -27,5 +27,9 @@ jobs:
         distribution: 'zulu'
         java-version: '21'
         cache: maven
+    - name: CD into petstore_test folder
+      run: cd petstore_test
+    - name: Build with Maven
+      run: mvn -B package
     - name: Test with Maven
-      run: cd petstore_test && mvn -B test --file pom.xml
+      run: mvn -B test --file pom.xml
