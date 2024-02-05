@@ -105,7 +105,7 @@ public class DeleteAPet extends BaseTest {
      * expected to return 404
      */
     @Test
-    public void givenValidPetId_deleteAPet_thenNotFound404() {
+    public void givenNotExistPetId_deleteAPet_thenNotFound404() {
 
             given()
                     .basePath(PETSTORE_URL + "/" + petId)
@@ -113,7 +113,6 @@ public class DeleteAPet extends BaseTest {
                     .delete()
                     .then()
                     .statusCode(404)
-                    .extract().asString()
 
             ;
 

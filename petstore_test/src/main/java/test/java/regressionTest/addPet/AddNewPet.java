@@ -14,8 +14,12 @@ import static io.restassured.RestAssured.given;
 
 public class AddNewPet extends BaseTest {
 
+    /** positive test
+     * Create new pet with simple details, all optional fields are provided
+     * expected to return 200
+     */
     @Test
-    public void givenValidMinDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched() throws IOException, JSONException {
+    public void givenValidSimpleDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched() throws IOException, JSONException {
 
         String request = new String(Files.readAllBytes(Paths.get(resourcePath + "Request_SimplePetDetails_200.json")))
                 .replace("\"<petId>\"", "112233")
@@ -37,7 +41,37 @@ public class AddNewPet extends BaseTest {
 
     }
 
+    /** positive test
+     * Create new pet with minimum details, all optional fields are not provided
+     * expected to return 200
+     */
+    @Test
+    public void givenValidMinimumDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched() throws IOException, JSONException {
 
+        String request = new String(Files.readAllBytes(Paths.get(resourcePath + "Request_MinimumPetDetails_200.json")))
+                .replace("\"<petId>\"", "112233")
+                ;
+
+        String actualResponse =
+                given()
+                        .contentType("application/json")
+                        .body(request)
+                        .log().all()
+                        .post()
+                        .then()
+                        .statusCode(200)
+                        .extract().asString()
+
+                ;
+
+        JSONAssert.assertEquals(actualResponse, request, JSONCompareMode.NON_EXTENSIBLE);
+
+    }
+
+    /** positive test
+     * Create new pet with complex details, multiple array values are provided
+     * expected to return 200
+     */
     @Test
     public void givenValidComplexDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched() throws IOException, JSONException {
 
@@ -58,6 +92,31 @@ public class AddNewPet extends BaseTest {
                 ;
 
         JSONAssert.assertEquals(actualResponse, request, JSONCompareMode.NON_EXTENSIBLE);
+
+    }
+
+    /** negative test
+     * Create new pet with missing mandatory details (name ond photoUrls)
+     * expected to return 400 or 405
+     * !!! currently return 200 - test failure
+     */
+    @Test
+    public void givenInValidComplexDetailsRequest_addNewPet_thenSuccess200_withResponseBodyMatched() throws IOException, JSONException {
+
+        String request = new String(Files.readAllBytes(Paths.get(resourcePath + "Request_MissingMandatory.json")))
+                .replace("\"<petId>\"", "1122334455")
+                ;
+
+        given()
+                .contentType("application/json")
+                .body(request)
+                .log().all()
+                .post()
+                .then()
+                .statusCode(400)
+                .log().all()
+
+                ;
 
     }
 
