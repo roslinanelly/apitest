@@ -1,0 +1,27 @@
+{
+  "id": "<petId>",
+  "category": {
+    "id": 111,
+    "name": "someCategoryName"
+  },
+  "name": "complex",
+  "photoUrls": [
+    "<url1>https://myphoto/123</url1>",
+    "<url2>https://myphoto/1234</url2>"
+  ],
+  "tags": [
+    {
+      "id": 11,
+      "name": "someTagName1"
+    },
+    {
+      "id": 22,
+      "name": "someTagName2"
+    },
+    {
+      "id": 33,
+      "name": "someTagName3"
+    }
+  ],
+  "status": "pending"
+}

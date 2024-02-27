@@ -1,0 +1,9 @@
+{
+  "id": "<petId>",
+  "category": {
+    "id": 0,
+    "name": ""
+  },
+  "tags": [],
+  "status": ""
+}
