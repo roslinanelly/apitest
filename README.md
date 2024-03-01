@@ -10,5 +10,3 @@ Test suite can be found in /src/test/java/petEndpoint/regressionTest
 
 Command line to run the tests with Maven is:
 mvn -B test --file pom.xml
-
-GitHub Action set up to execute these tests but for some reason currently doesn't run the test fully
